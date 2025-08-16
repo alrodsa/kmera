@@ -5,7 +5,6 @@ from src.data.file import File
 from src.data.folder import Folder
 import cv2
 from PIL import Image
-import piexif
 
 class Processor:
     @staticmethod
