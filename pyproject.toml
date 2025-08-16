@@ -1,9 +1,9 @@
 [project]
 name = "kmera"
 version = "0.1.0"
-description = ""
+description = "kmera: A tool for photo metadata extraction and analysis"
 authors = [
-    { name = "Tu Nombre", email = "tu@email.com" }
+    { name = "Alvaro R.", email = "alrodsa2@inf.upv.es" }
 ]
 readme = "README.md"
 license = { text = "MIT" }
