@@ -27,7 +27,7 @@ class File:
                 iso=str(tags.get("EXIF ISOSpeedRatings", "")).rstrip(),
                 focal_length=str(tags.get("EXIF FocalLength", "")).rstrip(),
                 date_taken=str(tags.get("EXIF DateTimeOriginal", "")).rstrip(),
-                location=f"{tags.get('GPS GPSLatitude', '').rstrip()} {tags.get('GPS GPSLongitude', '').rstrip()}",
+                location=f"{tags.get('GPS GPSLatitude', '').rstrip()}{tags.get('GPS GPSLongitude', '').rstrip()}",
                 description=str(tags.get("Image ImageDescription", "")).rstrip(),
                 exposure_bias=str(tags.get("EXIF ExposureBiasValue", "")).rstrip()
             )
