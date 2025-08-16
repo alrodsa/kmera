@@ -11,7 +11,7 @@ def check_naming_args(mode: NamingMode, input_dir: str) -> None:
     if mode not in NamingMode.choices():
         raise ValueError(f"Invalid naming mode: {mode}. Available modes: {NamingMode.choices()}")
     if not Path(input_dir).exists():
-        raise ValueError(f"Input directory does not exist: {input_dir}")
+        raise FileNotFoundError(f"Input directory does not exist: {input_dir}")
     if not Path(input_dir).is_dir():
         raise ValueError(f"Input path is not a directory: {input_dir}")
 
