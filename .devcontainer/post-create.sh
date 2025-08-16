@@ -1,17 +1,14 @@
 #!/usr/bin/env bash
 
-if ! command -v uv &>/dev/null; then
-  curl -LsSf https://astral.sh/uv/install.sh | sh
-fi
-
 export PATH="$HOME/.local/bin:$PATH"
 
-uv venv .venv --if-not-exists
+# Create a virtual environment if it doesn't exist
+[ -d .venv ] || uv venv .venv
 
-uv pip install -r pyproject.toml
-
+# Activate the virtual environment
 if ! grep -q "source .venv/bin/activate" ~/.zshrc; then
   echo 'source .venv/bin/activate' >> ~/.zshrc
 fi
 
-uv sync
+# Install dependencies
+uv sync --all-extras
