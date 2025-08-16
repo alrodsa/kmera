@@ -11,7 +11,10 @@ requires-python = ">=3.12"
 
 dependencies = [
     "requests",
-    "flask"
+    "flask",
+    "fire>=0.7.0",
+    "pydantic>=2.11.7",
+    "exifread>=3.4.0",
 ]
 
 [tool.uv]  
