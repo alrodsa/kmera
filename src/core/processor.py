@@ -155,7 +155,6 @@ class Processor:
             line_y = y + i * line_height
             cv2.putText(image, line, (x, line_y), font, font_scale, (255, 255, 255), thickness)
 
-        # Convertir y guardar manteniendo EXIF
         image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         pil_image = Image.fromarray(image_rgb)
 
