@@ -1,4 +1,4 @@
-FROM  python:3.12-slim
+FROM  nvidia/cuda:12.6.2-base-ubuntu22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -7,7 +7,10 @@ RUN apt install -y \
     git \
     python3-pip \
     zsh \
-    wget
+    wget \
+    libgl1 \
+    libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN apt update -y
 
