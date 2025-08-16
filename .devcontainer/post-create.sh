@@ -6,7 +6,7 @@ fi
 
 export PATH="$HOME/.local/bin:$PATH"
 
-uv venv .venv
+uv venv .venv --if-not-exists
 
 uv pip install -r pyproject.toml
 
