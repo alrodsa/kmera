@@ -35,7 +35,6 @@
           "**/__pycache__": true,
           "**/__pypackages__": true,
           "**/*.egg-info": true,
-          "**/.github": true,
           "**/.coverage": true,
           "**/.idea": true,
           "**/.pytest_cache": true,

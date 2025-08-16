@@ -13,3 +13,5 @@ uv pip install -r pyproject.toml
 if ! grep -q "source .venv/bin/activate" ~/.zshrc; then
   echo 'source .venv/bin/activate' >> ~/.zshrc
 fi
+
+uv sync
