@@ -26,7 +26,7 @@ jobs:
           uv pip install -e ".[format]"
 
       - name: 🔧 Run Ruff Lint
-        run: .venv/bin/ruff check src/saibyo
+        run: .venv/bin/ruff check src
 
   test:
     name: 🧪 Run Tests with Coverage
@@ -50,4 +50,4 @@ jobs:
           uv pip install -e ".[test]"
 
       - name: 🧪 Run Tests
-        run: .venv/bin/pytest --cov=saibyo tests/ -W ignore::DeprecationWarning --cov-report=xml --cov-report=term-missing
+        run: .venv/bin/pytest --cov=src tests/ -W ignore::DeprecationWarning --cov-report=xml --cov-report=term-missing
