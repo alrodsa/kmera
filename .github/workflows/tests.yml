@@ -1,0 +1,36 @@
+name: 🧪 Tests - Pytest
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: ❄️ Install uv and dependencies
+        run: |
+          pip install uv
+          uv venv .venv
+          source .venv/bin/activate
+          uv pip install -e ".[test]"
+
+      - name: 🧪 Run Tests
+        run: .venv/bin/pytest --cov=src tests/ -W ignore::DeprecationWarning --cov-report=xml --cov-report=term-missing
+
+      - name: 📦 Upload Coverage Report
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage.xml
+          fail_ci_if_error: true
