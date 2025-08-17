@@ -23,7 +23,6 @@
   </a>
 </p>
 
-
 **kmera** is a lightweight tool for beginner (and not-so-beginner) photographers who want to **easily compare their photos with capture information embedded directly inside each image**.
 
 
@@ -156,6 +155,11 @@ ORIGINAL DIRECTORY                 KMERA NAMING DIRECTORY
 |----------|---------------|
 | <img src="assets/images/no-named.JPG" width="500"/> <br/> **IMGP1275.JPG (original)** | <img src="assets/images/named.JPG" width="500"/> <br/> **IMGP1275_1s6000-5.6f-800.JPG** |
 
+### Explicative example
+
+This section provides an example of how the tool renames files and embeds metadata inside the photos. It is also a good way to see how the tool works in practice when taking photos with different settings and it is wanted to compare them:
+
+![kmera exaplicative example](assets/gifs/explicative-example.gif)
 
 ## 📜 License
 
