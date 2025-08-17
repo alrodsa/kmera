@@ -106,11 +106,23 @@ class Processor:
             Processor.replace_naming_metadata(subfolder, in_image)
 
     @staticmethod
-    def add_metadata_inside_image(file: "File", dst_file: str) -> "Processor":
+    def add_metadata_inside_image(file: File, dst_file: str) -> "Processor":
         """
         Open the image file with OpenCV and add photo metadata inside it
         with a semi-transparent background and white text. The metadata
         includes exposure time, aperture, ISO and EV (exposure bias).
+
+        Parameters
+        ----------
+        file : File
+            The file object containing the image and its metadata.
+        dst_file : str
+            The destination file path where the modified image will be saved.
+
+        Returns
+        -------
+        Processor
+            The Processor instance for method chaining.
         """
         image = cv2.imread(file.directory)
         if image is None:
