@@ -19,19 +19,19 @@
 
 <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
   <div style="text-align: center; flex: 1 1 45%;">
-    <img src="assets/images/flowers-no-named-1.JPG" alt="Original 1" width="500"/><br/>
+    <img src="assets/images/flowers-no-named-1.JPG" alt="Original 1" width="300"/><br/>
     <sub><b>IMGP1275.JPG (original)</b></sub>
   </div>
   <div style="text-align: center; flex: 1 1 45%;">
-    <img src="assets/images/flowers-named-1.JPG" alt="With metadata embedded 1" width="500"/><br/>
+    <img src="assets/images/flowers-named-1.JPG" alt="With metadata embedded 1" width="300"/><br/>
     <sub><b>IMGP1275_1s500-5.6f-200.JPG</b></sub>
   </div>
   <div style="text-align: center; flex: 1 1 45%;">
-    <img src="assets/images/flowers-no-named-2.JPG" alt="Original 2" width="500"/><br/>
+    <img src="assets/images/flowers-no-named-2.JPG" alt="Original 2" width="300"/><br/>
     <sub><b>IMGP1279.JPG (original)</b></sub>
   </div>
   <div style="text-align: center; flex: 1 1 45%;">
-    <img src="assets/images/flowers-named-2.JPG" alt="With metadata embedded 2" width="500"/><br/>
+    <img src="assets/images/flowers-named-2.JPG" alt="With metadata embedded 2" width="300"/><br/>
     <sub><b>IMGP1279_1s500-5.6f-100.JPG</b></sub>
   </div>
 </div>
