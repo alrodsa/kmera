@@ -136,7 +136,7 @@ class Processor:
             f"Exposure: {metadata.exposure_time.replace('s', '/')}",
             f"Aperture: {metadata.aperture}",
             f"ISO: {metadata.iso}",
-            f"EV: {metadata.exposure_bias}"  # ← añadido
+            f"EV: {metadata.exposure_bias}"
         ]
 
         font = cv2.FONT_HERSHEY_DUPLEX
