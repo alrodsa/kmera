@@ -8,6 +8,19 @@ import piexif
 
 @dataclass
 class File:
+    """
+    A class representing a file with its metadata and properties.
+
+    Attributes
+    ----------
+    name : str
+        The name of the file.
+    size : int
+        The size of the file in bytes.
+    directory : str
+        The directory where the file is located (absolute path).
+
+    """
     name: str
     size: int
     directory: str

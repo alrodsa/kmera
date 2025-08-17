@@ -7,6 +7,18 @@ from src.common.enums import NamingMode
 
 @dataclass
 class Namer:
+    """
+    A class to handle naming operations for files and folders, either copying
+    metadata from images or replacing existing metadata with new information.
+
+    Attributes
+    ----------
+    mode : NamingMode
+        The mode of naming operation, either COPY or REPLACE.
+    in_image : bool
+        If True, metadata will be added inside the image files.
+    """
+
     mode: NamingMode
     in_image: bool
 
@@ -21,5 +33,5 @@ class Namer:
             print(f"✍️ Replaced files in {folder.directory} with photo metadata info.")
         else:
             raise ValueError(f"Unsupported naming mode: {self.mode}")
-    
+
         return self

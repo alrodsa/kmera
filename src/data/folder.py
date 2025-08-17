@@ -8,6 +8,19 @@ from src.data.file import File
 
 @dataclass
 class Folder:
+    """
+    A class representing a folder containing files and subfolders.
+
+    Attributes
+    ----------
+    directory : str
+        The absolute path of the folder.
+    folders : list[Folder]
+        A list of subfolders within this folder.
+    files : list[File]
+        A list of files within this folder.
+    """
+    
     directory: str
     folders: list[Folder] = field(default_factory=list)
     files: list[File] = field(default_factory=list)
