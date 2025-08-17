@@ -1,14 +1,23 @@
 # 📸 kmera: A simple photography comparation tool
 
 <p align="center">
-  <a href="https://github.com/alrodsa/kmera/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/alrodsa/kmera/ci.yml?branch=main&label=CI&logo=github&logoColor=white&style=for-the-badge" alt="CI Status"/>
+  <!-- Lint -->
+  <a href="https://github.com/alrodsa/kmera/actions/workflows/lint.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/alrodsa/kmera/lint.yml?branch=main&label=Lint&logo=github&logoColor=white&style=for-the-badge" alt="Lint Status"/>
   </a>
+  <!-- Tests -->
+  <a href="https://github.com/alrodsa/kmera/actions/workflows/tests.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/alrodsa/kmera/tests.yml?branch=main&label=Tests&logo=github&logoColor=white&style=for-the-badge" alt="Tests Status"/>
+  </a>
+  <!-- Coverage -->
   <a href="https://codecov.io/gh/alrodsa/kmera">
     <img src="https://img.shields.io/codecov/c/github/alrodsa/kmera?logo=codecov&logoColor=white&style=for-the-badge" alt="Coverage"/>
   </a>
+  <!-- Python version -->
   <img src="https://img.shields.io/badge/python-3.12%2B-blue?logo=python&logoColor=white&style=for-the-badge" alt="Python Version"/>
+  <!-- Linter info -->
   <img src="https://img.shields.io/badge/linter-ruff-yellow?logo=ruff&logoColor=white&style=for-the-badge" alt="Linter"/>
+  <!-- License -->
   <a href="https://opensource.org/licenses/MIT">
     <img src="https://img.shields.io/badge/license-MIT-green?logo=opensourceinitiative&logoColor=white&style=for-the-badge" alt="License: MIT"/>
   </a>
