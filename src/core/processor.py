@@ -7,6 +7,11 @@ import cv2
 from PIL import Image
 
 class Processor:
+    """
+    A class to process folders and files, copying or replacing metadata
+    in images and organizing files based on their metadata.
+    """
+
     @staticmethod
     def copy_naming_metadata(
         folder: Folder, source_root: Path, output_root: Path, in_image: bool
