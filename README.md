@@ -1,11 +1,19 @@
 # 📸 kmera: A simple photography comparation tool
 
-[![CI Status](https://img.shields.io/github/actions/workflow/status/alvaroroca/kmera/ci.yml?branch=main&label=CI&logo=github&style=for-the-badge)](https://github.com/alvaroroca/kmera/actions)
-[![Coverage](https://img.shields.io/codecov/c/github/alvaroroca/kmera?logo=codecov&style=for-the-badge)](https://codecov.io/gh/alvaroroca/kmera)
+<p align="center">
+  <a href="https://github.com/alrodsa/kmera/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/alrodsa/kmera/ci.yml?branch=main&label=CI&logo=github&logoColor=white&style=for-the-badge" alt="CI Status"/>
+  </a>
+  <a href="https://codecov.io/gh/alrodsa/kmera">
+    <img src="https://img.shields.io/codecov/c/github/alrodsa/kmera?logo=codecov&logoColor=white&style=for-the-badge" alt="Coverage"/>
+  </a>
+  <img src="https://img.shields.io/badge/python-3.12%2B-blue?logo=python&logoColor=white&style=for-the-badge" alt="Python Version"/>
+  <img src="https://img.shields.io/badge/linter-ruff-yellow?logo=ruff&logoColor=white&style=for-the-badge" alt="Linter"/>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/license-MIT-green?logo=opensourceinitiative&logoColor=white&style=for-the-badge" alt="License: MIT"/>
+  </a>
+</p>
 
-![Python Version](https://img.shields.io/badge/python-3.12%2B-blue?logo=python&style=for-the-badge)
-![Linter](https://img.shields.io/badge/linter-ruff-yellow?logo=ruff&style=for-the-badge)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 **kmera** is a lightweight tool for beginner (and not-so-beginner) photographers who want to **easily compare their photos with capture information embedded directly inside each image**.
 
