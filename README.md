@@ -17,24 +17,12 @@
 
 **kmera** is a lightweight tool for beginner (and not-so-beginner) photographers who want to **easily compare their photos with capture information embedded directly inside each image**.
 
-<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-  <div style="text-align: center; flex: 1 1 45%;">
-    <img src="assets/images/flowers-no-named-1.JPG" alt="Original 1" width="300"/><br/>
-    <sub><b>IMGP1275.JPG (original)</b></sub>
-  </div>
-  <div style="text-align: center; flex: 1 1 45%;">
-    <img src="assets/images/flowers-named-1.JPG" alt="With metadata embedded 1" width="300"/><br/>
-    <sub><b>IMGP1275_1s500-5.6f-200.JPG</b></sub>
-  </div>
-  <div style="text-align: center; flex: 1 1 45%;">
-    <img src="assets/images/flowers-no-named-2.JPG" alt="Original 2" width="300"/><br/>
-    <sub><b>IMGP1279.JPG (original)</b></sub>
-  </div>
-  <div style="text-align: center; flex: 1 1 45%;">
-    <img src="assets/images/flowers-named-2.JPG" alt="With metadata embedded 2" width="300"/><br/>
-    <sub><b>IMGP1279_1s500-5.6f-100.JPG</b></sub>
-  </div>
-</div>
+
+| Original | With Metadata |
+|----------|---------------|
+| <img src="assets/images/flowers-no-named-1.JPG" width="500"/> <br/> **IMGP1275.JPG (original)** | <img src="assets/images/flowers-named-1.JPG" width="500"/> <br/> **IMGP1275_1s500-5.6f-200.JPG** |
+| <img src="assets/images/flowers-no-named-2.JPG" width="500"/> <br/> **IMGP1279.JPG (original)** | <img src="assets/images/flowers-named-2.JPG" width="500"/> <br/> **IMGP1279_1s500-5.6f-100.JPG** |
+
 
 The idea came from a personal experience:
 > I recently started learning photography, experimenting with shutter speed, aperture, and ISO to keep the **EV at 0** (which is usually considered the “correct” exposure).
@@ -155,16 +143,10 @@ ORIGINAL DIRECTORY                 KMERA NAMING DIRECTORY
 
 ### Inside-image transformation
 
-<div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <img src="assets/images/no-named.JPG" alt="Original" width="500"/><br/>
-    <sub><b>IMGP1275.JPG (original)</b></sub>
-  </div>
-  <div style="text-align: center;">
-    <img src="assets/images/named.JPG" alt="With metadata embedded" width="500"/><br/>
-    <sub><b>IMGP1275_1s6000-5.6f-800.JPG</b></sub>
-  </div>
-</div>
+| Original | With Metadata |
+|----------|---------------|
+| <img src="assets/images/no-named.JPG" width="500"/> <br/> **IMGP1275.JPG (original)** | <img src="assets/images/named.JPG" width="500"/> <br/> **IMGP1275_1s6000-5.6f-800.JPG** |
+
 
 ## 📜 License
 
