@@ -27,3 +27,9 @@ jobs:
 
       - name: 🧪 Run Tests
         run: .venv/bin/pytest --cov=src tests/ -W ignore::DeprecationWarning --cov-report=xml --cov-report=term-missing
+
+      - name: 📦 Upload Coverage Report
+        uses: codecov/codecov-action@v4
+        with:
+          files: ./coverage.xml
+          fail_ci_if_error: true
