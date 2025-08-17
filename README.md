@@ -159,7 +159,7 @@ ORIGINAL DIRECTORY                 KMERA NAMING DIRECTORY
 
 This section provides an example of how the tool renames files and embeds metadata inside the photos. It is also a good way to see how the tool works in practice when taking photos with different settings and it is wanted to compare them:
 
-![kmera exaplicative example](assets/gifs/explicative-example.gif)
+![kmera explicative example](assets/gifs/explicative-example.gif)
 
 ## 📜 License
 
