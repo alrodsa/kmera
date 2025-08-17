@@ -4,11 +4,14 @@ import tempfile
 from unittest import TestCase
 from unittest.mock import patch
 
+import cv2
+import numpy as np
+
 from src.data.file import File
 from src.data.folder import Folder
 from src.core.processor import Processor
 
-class TestCLINaming(TestCase):
+class TestProcessor(TestCase):
     def setUp(self):
         self.tmpdir = tempfile.mkdtemp()
         self.input_dir = str(Path(self.tmpdir) / "test_input")
@@ -86,3 +89,36 @@ class TestCLINaming(TestCase):
         replaced_file_path = Path(self.input_dir) / "subfolder_1" / "replaced_test_file1.jpg"
         self.assertTrue(replaced_file_path.exists())
         self.assertTrue(replaced_file_path.is_file())
+
+    def test_add_metadata_inside_image_correct_image(
+        self
+    ):
+        array = np.full((100, 100, 3), 255, dtype=np.uint8)
+        cv2.imwrite(str(self.file_path), array)
+
+        self.assertTrue(self.file_path.exists())
+        self.assertTrue(self.file_path.is_file())
+
+        image_file = File(
+            name=str(self.file_path.name),
+            directory=str(self.file_path),
+            size=0,
+        )
+
+        Processor.add_metadata_inside_image(image_file, str(self.file_copy_path))
+
+        self.assertTrue(self.file_copy_path.exists())
+        self.assertTrue(self.file_copy_path.is_file())
+        self.assertTrue(self.file_copy_path.stat().st_size > 0)
+
+    def test_add_metadata_inside_image_non_image_file(self):
+        non_image_file = File(
+            name="test_file.txt",
+            directory=str(Path(self.input_dir) / "test_file.txt"),
+            size=0,
+        )
+        Path(non_image_file.directory).touch()
+
+        Processor.add_metadata_inside_image(non_image_file, str(self.file_copy_path))
+        self.assertFalse(self.file_copy_path.exists())
+        self.assertFalse(self.file_copy_path.is_file())
